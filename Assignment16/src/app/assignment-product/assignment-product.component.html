@@ -1,0 +1,31 @@
+<h6>ProductComponents</h6>
+<div class ="container">
+<table border="1px"class="table table-hover">
+
+    <tr>
+        <td colspan="4">Search:<input type="text" [(ngModel)]="filter"  ></td>
+        <td><select class="form-select" [(ngModel)]="funnel" >
+          <option [value]="'a-z'">A-Z</option>
+          <option [value]="'z-a'">Z-A</option>
+          <option [value]="'low'">Low-High</option>
+          <option [value]="'high'">High-Low</option>
+        </select></td>
+    </tr>
+
+    <tr><th>PID</th>
+        <th>ProductName</th>
+        <th>Productprice</th>
+        <th>Productdesc</th>
+        <th>productimage</th>
+
+    </tr>
+    <tr ngColor *ngFor="let product of  products|search:filter|spipe:funnel">
+    <td>{{product.id}}</td>
+    <td>{{product.name | titlecase}}</td>
+    <td>{{product.price | currency:'USD'}}</td>
+    <td>{{product.desc}}</td>
+    <td><img [src]='product.Img' height='60px' width='50px'></td>
+
+</tr>
+</table>
+</div>

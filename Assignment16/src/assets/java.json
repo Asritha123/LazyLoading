@@ -1,0 +1,22 @@
+[{
+  "id":"javascript",
+  "name":"JavaScript",
+  "price":4000,
+  "desc":"Course Contains All SpringBoot Material",
+  "Img":"assets/javascript.jpeg"
+
+},
+{  "id":"oops",
+  "name":"Oops",
+  "price":5000,
+  "desc":"Course Contains All Oops Material",
+  "Img":"assets/oop.jpeg"
+},
+{  "id":"jdbc",
+  "name":"Jdbc",
+  "price":6000,
+  "desc":"Course Contains All jdbc Material",
+  "Img":"assets/jdbc.jpeg"
+}
+]
+

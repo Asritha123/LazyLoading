@@ -1,0 +1,50 @@
+<h2>Web</h2>
+<div class ='container' align='center'>
+
+    <div class="row">
+      <div ngColor *ngFor='let course of courses1' class="col-sm">
+        <a [routerLink]='[course.id]' routerLinkActive="active"><img [src]='course.Img' height='60px' width='85px'></a>
+      </div>
+      </div>
+     <router-outlet></router-outlet>
+      <!-- </div>
+        <div class ="container">
+          <table border="1px"class="table table-hover">
+
+              <tr>
+                  <td colspan="4">Search:<input type="text" [(ngModel)]="filter"  ></td>
+                  <td><select class="form-select" [(ngModel)]="funnel" >
+                    <option [value]="'a-z'">A-Z</option>
+                    <option [value]="'z-a'">Z-A</option>
+                    <option [value]="'low'">Low-High</option>
+                    <option [value]="'high'">High-Low</option>
+                  </select></td>
+              </tr>
+
+              <tr><th>CourseID</th>
+                  <th>CourseName</th>
+                  <th>Courseprice</th>
+                  <th>Coursedesc</th>
+                   <th>CourseLogo</th>
+
+              </tr>
+              <tr ngColor *ngFor="let course of  courses1|search:filter|spipe:funnel">
+              <td>{{course.id}}</td>
+              <td>{{course.name| titlecase}}</td>
+              <td>{{course.price | currency:'USD'}}</td>
+              <td>{{course.desc}}</td>
+              <td><img [src]='course.Img' height='60px' width='60px'></td>
+
+
+          </tr>
+          </table>
+          </div>
+
+  -->
+
+
+
+<!-- <p>web works!</p>
+<h6>ProductComponents</h6>
+
+ -->

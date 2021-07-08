@@ -1,0 +1,30 @@
+[
+  {
+  "id":1,
+  "name":"Dairy milk",
+  "price":300,
+  "desc":" contains 10packets of dairymilk chocolates",
+"Img":"assets/choco.jpeg",
+"courseImg":""
+},
+{
+"id":2,
+"name":"kit kat",
+"price":250,
+"desc":" contains 20 packets of kitkat chocolates",
+"Img":"assets/kitkat.webp"
+},
+{
+"id":3,
+  "name":"Snickers",
+  "price":500,
+  "desc":" contains 30 packets of snickers chocolates",
+"Img":"assets/snickers.jpg"
+},
+{
+"id":4,
+  "name":"5-Star",
+  "price":550,
+  "desc":" contains 40 packets of snickers chocolates",
+"Img":"assets/5-Star.jpg"}]
+

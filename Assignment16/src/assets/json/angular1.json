@@ -1,0 +1,15 @@
+[{
+  "id":"101",
+  "name":"Directives",
+  "price":4000,
+  "desc":"Course Contains All Directives Material",
+  "Img":"assets/javascript.jpeg"
+
+},
+{  "id":"102",
+  "name":"Modules",
+  "price":5000,
+  "desc":"Course Contains All Modules Material",
+  "Img":"assets/oop.jpeg"
+}
+]

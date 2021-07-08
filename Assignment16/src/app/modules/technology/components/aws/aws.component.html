@@ -1,0 +1,46 @@
+<div class='container'>
+  <br>
+  <hr>
+  <table>
+    <tr>
+      <td><h5><b>Name: </b>{{courses.name}}</h5></td>
+
+
+    </tr>
+    <tr>
+      <td><h5><b>Desc: </b>{{courses.desc}}</h5></td>
+
+
+    </tr>
+  </table>
+</div>
+<div class ="container">
+  <table border="1px"class="table table-hover">
+
+      <tr>
+          <td colspan="1">Search:<input type="text" [(ngModel)]="filter"  ></td>
+          <td><select class="form-select" [(ngModel)]="funnel" >
+            <option [value]="'a-z'">A-Z</option>
+            <option [value]="'z-a'">Z-A</option>
+            <option [value]="'low'">Low-High</option>
+            <option [value]="'high'">High-Low</option>
+          </select></td>
+      </tr>
+
+      <tr><th>CourseID</th>
+          <th>CourseName</th>
+          <th>Courseprice</th>
+          <th>Coursedesc</th>
+           <th>CourseLogo</th>
+
+      </tr>
+      <tr ngColor *ngFor="let course of  wcourses|search:filter|spipe:funnel">
+      <td>{{course.id}}</td>
+      <td>{{course.name| titlecase}}</td>
+      <td>{{course.price | currency:'USD'}}</td>
+      <td>{{course.desc}}</td>
+      <td><img [src]='course.Img' height='60px' width='60px'></td>
+
+  </tr>
+  </table>
+  </div>

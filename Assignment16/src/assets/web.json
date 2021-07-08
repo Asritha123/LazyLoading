@@ -1,0 +1,24 @@
+[{
+
+  "id":"html5",
+  "name":"HTML5",
+  "price":3000,
+  "desc":"Course Contains All HTML5Concept Material ",
+   "Img":"assets/html.png"
+},
+{
+  "id":"aws",
+  "name":"AWS",
+  "price":4000,
+  "desc":"Course Contains All AWSConcept Material ",
+  "Img":"assets/Aws.png"
+},
+{
+
+    "id":"angular",
+    "name":"Angular",
+    "price":5000,
+    "desc":"Course Contains All AngularConcept Material ",
+    "Img":"assets/Angular.jpeg"
+}
+]
